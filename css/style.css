@@ -1,0 +1,234 @@
+
+@font-face {
+  font-family: "Big Noodle Titling";
+  src: url(../fonts/big_noodle_titling.ttf);
+}
+/* herança */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 3;
+}
+
+header img {
+  width: 75px;
+}
+
+#titulo-site {
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+header nav {
+  position: absolute;
+  right: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+header nav ul li {
+  width: 150px;
+}
+
+header nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #5f4a90;
+}
+
+/* multiplos seletores, o * significa tudo que está contido na tag*/
+header * {
+  display: inline-block;
+}
+
+#titulo-site {
+  font-size: 16px;
+  margin: 0;
+}
+
+#banner {
+  height: 640px; /* por padrão a altura sempre vai ser o mínimo para caber os elementos */
+  text-align: center; /* sempre vai na tag pai para centralizar tudo */
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* pra cobrir tudo, faz os cálculos para que não fique pixelada, tb funciona com 100% só que pior */
+  margin: 0px;
+  color: white; /* como o pai recebe, todos os filhos serão iguais, no caso os textos */
+  font-weight: bold;
+}
+
+#banner h4 {
+  /*seleciona o p que está dentro do id banner */
+  padding-top: 300px; /*cria o padding no primeiro elemento que empurra os seguintes */
+  margin: 0px;
+}
+
+#banner h1 {
+  font-size: 35px;
+}
+
+#banner button {
+  background-color: white;
+  font-size: 17px;
+  border: none;
+  padding: 15px 25px; /* pode usar o width e o heigth pra fazer de forma fixa */
+  border-radius: 25px;
+  text-transform: uppercase; /* deixa todas as letras em maiúsculo */
+}
+
+#banner button:hover {
+  background-color: #5f4a90;
+  color: white;
+}
+
+#produtos {
+  text-align: center; /* centraliza também as divs, não só textos */
+}
+
+#produtos div {
+  display: inline-block;
+  width: 350px;
+  height: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+#produtos div button {
+  text-transform: uppercase;
+  font-size: 17px;
+  background-color: white;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 195px;
+}
+
+#produtos div button:hover {
+  background-color: #5f4a90;
+  color: white;
+}
+
+#prod1 {
+  background-image: url(../img/product-1.jpg);
+  background-size: cover;
+}
+
+#prod2 {
+  background-image: url(../img/product-2.jpg);
+  background-size: cover;
+}
+
+#prod3 {
+  background-image: url(../img/product-3.jpg);
+  background-size: cover;
+}
+
+#prod4 {
+  background-image: url(../img/product-4.jpg);
+  background-size: cover;
+}
+
+#prod5 {
+  background-image: url(../img/product-5.jpg);
+  background-size: cover;
+}
+
+#prod6 {
+  background-image: url(../img/product-6.jpg);
+  background-size: cover;
+}
+
+footer {
+  height: 70px;
+  background-color: #5f4a90;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  padding-top: 25px;
+  margin-top: 0px;
+  
+}
+
+/* CONTACT PAGE */
+#contact {
+  height: 630px;
+  background-image: url(../img/bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form {
+  height: 450px;
+  width: 530px;
+  border: 1px solid #5f4a90;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+form div input {
+  width: 440px;
+  padding: 7px;
+  margin-bottom: 10px;
+  border: 1px solid #5f4a90;
+  border-radius: 15px;
+}
+
+#form h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+#message {
+  height: 120px;
+  width: 445px;
+  border-radius: 30px;
+  border: 1px solid #5f4a90;
+  margin-bottom: 20px;
+}
+
+#form button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 28px;
+  border: none;
+  border-radius: 25px;
+  background-color: #5f4a90;
+  color: white;
+  position: absolute;
+  right: 40px;
+}
+
+#form button:hover {
+  color: black;
+  background-color: white;
+}

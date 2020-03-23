@@ -1,0 +1,55 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" alt="logo câmera fotográfica" />
+            <h1 id="titulo-site">Landseeker</h1>
+            <nav>
+            <ul>
+                <!--o google espera que o nav seja uma lista de links-->
+                <li><a href="index.html">Home</a></li>
+                <li>About</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="contact">
+                <div id="form">
+                    <form action="contact.html" method="POST">
+
+                    <label for="contact-us"><h1>Contact Us!</h1></label><br>
+
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name"><br>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" name="email" id="email"><br>
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+                    </div>
+
+                        <input type="checkbox" name="dont-post" id="dont-post" value="dont-post">
+                        <label for="dont-post">Don't post my name</label>
+
+                    <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright © Digital House</p>
+          </footer>
+    </body>
+    </html>
